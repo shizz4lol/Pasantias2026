@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\ControladorLogin;
+Route::get('/', 'App\Http\Controllers\ControladorWeb@registro');
+Route::get('/login', [ControladorLogin::class, 'login'])
+->name('login');
+?>
