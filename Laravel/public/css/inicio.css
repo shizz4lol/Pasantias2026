@@ -1,0 +1,194 @@
+body {
+    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Fondo_Página.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(0.3);
+    z-index: -1;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+#titulo-header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #e8a113;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#logout-header .btn-outline-info {
+    color: #ffffff !important;
+    border-color: #ad780f !important;
+    padding: 0;
+    font-weight: bold;
+}
+
+#logout-header .btn-outline-info:hover {
+    background-color: #7a5407 !important;
+    border-color: #7a5407 !important;
+}
+
+#logout-header .btn-outline-info a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 6px 16px;
+}
+
+#cuerpo {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    margin: 0;
+    vertical-align: middle;
+}
+
+thead th {
+    color: #be8106 !important;
+    border-bottom: 2px solid #ad780f !important;
+    background-color: transparent !important;
+    font-size: medium;
+    padding: 15px 10px !important;
+    text-align: left;
+}
+
+tbody td {
+    color: #ffffff !important;
+    background-color: transparent !important;
+    padding: 15px 10px !important;
+}
+
+tr:last-of-type td {
+    border-bottom: none !important;
+}
+
+tbody td data-cell, tbody td button, tbody td .btn {
+    display: inline-block;
+}
+
+tbody td .btn-primary {
+    background-color: #ad780f !important;
+    border-color: #ad780f !important;
+    font-weight: bold;
+    padding: 0;
+    margin-right: 10px;
+}
+
+tbody td .btn-primary:hover {
+    background-color: #7a5407 !important;
+    border-color: #7a5407 !important;
+}
+
+tbody td .btn-primary a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 6px 12px;
+}
+
+tbody td .btn-outline-info {
+    color: #ffffff !important;
+    border-color: #ad780f !important;
+    font-weight: bold;
+    padding: 6px 12px;
+}
+
+tbody td .btn-outline-info:hover {
+    background-color: #7a5407 !important;
+    border-color: #7a5407 !important;
+}
+
+#agregar {
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+#agregar .btn-primary {
+    background-color: #ad780f !important;
+    border-color: #ad780f !important;
+    padding: 0;
+    font-weight: bold;
+}
+
+#agregar .btn-primary:hover {
+    background-color: #7a5407 !important;
+    border-color: #7a5407 !important;
+}
+
+#agregar .btn-primary a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 8px 24px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 110px;
+    }
+    header {
+        padding: 0 15px;
+    }
+    #titulo-header h1 {
+        font-size: 20px;
+    }
+    #cuerpo {
+        padding: 10px;
+    }
+    tbody td .btn-primary {
+        margin-right: 0;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    tbody td .btn-outline-info {
+        width: 100%;
+    }
+}
