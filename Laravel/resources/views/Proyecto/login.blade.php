@@ -18,16 +18,21 @@
         <div id="login">
             <h2>Login</h2>
 
-            <form>
-                <label name="email">Email:</label><br/>
-                <input type="email" name="email"><br/>
+            <form action="{{ route('login.validar') }}" method="POST">
+            @csrf
+                <label name="name-label">Nombre de usuario:</label><br/>
+                <input type="text" name="name"><br/>
 
-                <label name="contraseña">Contraseña:</label><br/>
-                <input type="password" name="contraseña"><br/>
+                <label name="contraseña-label">Contraseña:</label><br/>
+                <input type="password" name="password"><br/>
                 <br/>
-                <input class="btn btn-primary" type="submit" value="Submit">
+                <input class="btn btn-primary" type="submit" value="Enviar">
             </form>
+            @if(session('error'))
 
+             <p>{{ session('error') }}</p>
+
+            @endif
         </div>
 
         

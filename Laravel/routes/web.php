@@ -8,6 +8,7 @@ use App\Http\Controllers\ControladorLibro;
 Route::get('/', [ControladorWeb::class, 'registro'])->name('registro');
 Route::get('/inicio', [ControladorWeb::class, 'productos'])->name('inicio');
 Route::get('/login', [ControladorLogin::class, 'login'])->name('login');
+Route::get('/logout', [ControladorWeb::class, 'logout'])->name('logout');
 Route::post('/validar', [ControladorLogin::class, 'validar'])->name('login.validar');
 
 Route::resource('libros', ControladorLibro::class);

@@ -15,4 +15,7 @@ class ControladorLibro extends Controller
     {
         return view('proyecto.añadir');
     }
+    public function store(Request $request){
+
+    }
 }

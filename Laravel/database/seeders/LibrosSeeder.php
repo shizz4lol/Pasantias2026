@@ -17,14 +17,14 @@ class LibrosSeeder extends Seeder
             'Nombre'=>'Rayuela',
             'Autor'=>'Julio Cortazar',
             'Imagen'=>'',
-            'ISBN'=>'00000000',
+            'ISBN'=>'978-842-0437-484',
             'stock'=>'10'
         ]);
         Libros::create([
             'Nombre'=>'La Divina Comedia',
             'Autor'=>'Dante Aligneri',
             'Imagen'=>'',
-            'ISBN'=>'0000000022',
+            'ISBN'=>'978-956-0011-275 ',
             'stock'=>'12'
         ]);
     }

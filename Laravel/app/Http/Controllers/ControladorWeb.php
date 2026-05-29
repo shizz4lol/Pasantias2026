@@ -10,6 +10,9 @@ class ControladorWeb extends Controller
         return view ('index');
     }
     public function productos(){
-        return view ('Proyecto.productos');
+        return view ('Proyecto.inicio');
+    }
+    public function logout(){
+        return view ('Proyecto.logout');
     }
 }

@@ -9,8 +9,7 @@ class ControladorLogin extends Controller{
     public function login(){
         return view('Proyecto.login');
     }
-    public function validar(Request $request)
-    {
+    public function validar(Request $request){
         $user= User::where('name', $request->name)->first();
 
         if ($user && Hash::check($request->password, $user->password)) {

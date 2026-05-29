@@ -33,7 +33,7 @@
         </form>
 
         <br/>
-        <h3>¿Ya tienes una cuenta?</h3>
+        <h3>¿Ya tienes una cuenta?<h3>
         <button type="button" class="btn btn-outline-info"><a href="{{ route('login') }}">Login</a></button>
     </div>
 
