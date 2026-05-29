@@ -9,4 +9,7 @@ class ControladorWeb extends Controller
     public function registro(){
         return view ('index');
     }
+    public function productos(){
+        return view ('Proyecto.productos');
+    }
 }

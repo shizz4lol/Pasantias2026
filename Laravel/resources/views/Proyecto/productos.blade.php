@@ -6,8 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>REGISTRO</h1>
-    <a href="{{ route('login') }}"><h1>Tengo cuenta</h1></a>
-    
+    <a href=""><h1 style="font-size: xx-large; color:red">hola llololololol</h1></a>
 </body>
 </html>
