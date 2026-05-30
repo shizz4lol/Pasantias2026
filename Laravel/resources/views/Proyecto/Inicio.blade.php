@@ -23,17 +23,21 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th>Tapa</th>
                     <th>Nombre del libro</th>
                     <th>Autor</th>
                     <th>ISBN</th>
+                    <th>Stock disponible</th>
                     <th>Modificaciones</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
+                    <td><img src="" class="imagen"></td>
                     <td>El Aleph</td>
                     <td>Jorge Luis Borges</td>
                     <td>978-950-04-0000-1</td>
+                    <td>10</td>
                     <td>
                         <button type="button" class="btn btn-primary"><a href="">Modificar</a></button>
                         <button type="button" class="btn btn-outline-info">Eliminar</button>
