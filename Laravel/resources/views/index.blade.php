@@ -19,7 +19,7 @@
         <h2>¡Bienvenido!</h2>
 
         <h3>Registro</h3>
-        <form>
+        <form action="{{route('user.crear')}}" method="POST">
             <label name="nombre">Nombre:</label><br/>
             <input type="Text" name="nombre"><br/>
 

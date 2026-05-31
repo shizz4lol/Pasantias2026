@@ -1,4 +1,5 @@
 <?php
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,25 +15,36 @@
         <div id="titulo-header">
             <h1>Santuario de Letras</h1>
         </div>
-        <div id="logout-header">
-            <button type="button" class="btn btn-outline-info"><a href="{{ route('logout') }}">Cerrar sesión</a></button>
+        <div id="header-izq">
+            <div id="user-header">
+                @if(isset($_SESSION['usuario']))
+                    <p>Hola {{ $_SESSION['usuario'] }} !</p>
+                @endif
+            </div>
+            <div id="logout-header">
+                <button type="button" class="btn btn-outline-info"><a href="{{route ('logoutvista')}}">Cerrar sesión</a></button>
+            </div>
         </div>
     </header>
 
     <div id="cuerpo">
-        <h2>Agregar Libro</h2>
+        <h2>Ingrese los datos del nuevo libro</h2>
 
-        <form>
-            <label name="nombre">Nombre:</label><br/>
-            <input type="text" name="nombre"><br/>
+        <form action="{{route('libros.store')}}" method="POST">
+        @csrf
+            <label name="nombrelibro">Nombre:</label><br/>
+            <input type="text" name="nombrelibro"><br/>
 
             <label name="autor">Autor:</label><br/>
             <input type="text" name="autor"><br/>
 
             <label name="isbn">ISBN:</label><br/>
             <input type="text" name="isbn"><br/>
+
+            <label name="img">Ruta de Imagen</label><br/>
+            <input type="text" name="img"><br/>
             <br/>
-            <input class="btn btn-primary" type="submit" value="Guardar">
+            <input class="btn btn-primary" type="submit" value="Agregar">
         </form>
 
         <br/>

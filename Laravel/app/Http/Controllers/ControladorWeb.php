@@ -9,10 +9,7 @@ class ControladorWeb extends Controller
     public function registro(){
         return view ('index');
     }
-    public function productos(){
-        return view ('Proyecto.inicio');
-    }
-    public function logout(){
+    public function logoutvista(){
         return view ('Proyecto.logout');
     }
 }

@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('Autor');
             $table->string('Imagen')->nullable();
             $table->string('ISBN');
-            $table->integer('Stock');
             $table->timestamps();
         });
     }

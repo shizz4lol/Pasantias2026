@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Libros;
+use App\Models\Libro;
 
 class LibrosSeeder extends Seeder
 {
@@ -13,34 +13,34 @@ class LibrosSeeder extends Seeder
      */
     public function run(): void
     {
-        Libros::create([
+        Libro::create([
             'Nombre'=>'Rayuela',
             'Autor'=>'Julio Cortazar',
-            'Imagen'=>'',
+            'Imagen'=>'../images/rayuela.jpg',
             'ISBN'=>'978-842-0437-484'
         ]);
-        Libros::create([
+        Libro::create([
             'Nombre'=>'La Divina Comedia',
             'Autor'=>'Dante Aligneri',
-            'Imagen'=>'',
+            'Imagen'=>'../images/divinacomedia.jpg',
             'ISBN'=>'978-956-0011-275'
         ]);
-        Libros::create([
+        Libro::create([
             'Nombre'=>'Padre rico, Padre pobre',
             'Autor'=>'Robert Kiyosaki',
-            'Imagen'=>'',
+            'Imagen'=>'../images/padrericopadrepobre.jpg',
             'ISBN'=>'978-607-31-1161-8'
         ]);
-        Libros::create([
+        Libro::create([
             'Nombre'=>'Harry Potter y la Piedra Filosofal',
             'Autor'=>'J. K. Rowling',
-            'Imagen'=>'',
+            'Imagen'=>'../images/harrypotterpiedrafilosofal.jpg',
             'ISBN'=>'978-987-8000-107'
         ]);
-        Libros::create([
+        Libro::create([
             'Nombre'=>'El Retrato de Dorian Gray',
             'Autor'=>'Oscar Wilde',
-            'Imagen'=>'',
+            'Imagen'=>'../images/retratodoriangray.jpg',
             'ISBN'=>'978-987-2121-389'
         ]);
     }

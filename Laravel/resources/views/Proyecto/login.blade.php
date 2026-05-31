@@ -30,9 +30,11 @@
             </form>
             @if(session('error'))
 
-             <p>{{ session('error') }}</p>
+             <p id="error">{{ session('error') }}</p>
 
             @endif
+            <h3>No tengo cuenta<h3>
+            <button type="button" class="btn btn-outline-info"><a href="{{ route('registro') }}">Registrarme</a></button>
         </div>
 
         

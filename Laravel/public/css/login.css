@@ -60,6 +60,13 @@ body::before {
     font-size: 1.6rem;
     margin-bottom: 25px;
 }
+#login h3 {
+    color: #aaaaaa;
+    font-size: 1rem;
+    margin-top: 25px;
+    margin:10px;
+
+}
 
 label {
     display: block;
@@ -100,7 +107,34 @@ input[type="password"]:focus {
     background-color: #7a5407 !important;
     border-color: #7a5407 !important;
 }
+.btn-outline-info {
+    border-color: #ad780f !important;
+    width: 100%;
+    padding: 0;
+}
 
+.btn-outline-info:hover {
+    background-color: #7a5407 !important;
+}
+.btn-outline-info:hover a {
+    color: #ffffff !important;
+}
+.btn-outline-info a {
+    color: #ad780f;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+}
+#error{
+    color:#e8a113;
+    font-size: 15px;
+    margin-top:15px;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
 @media (max-width: 480px) {
     body {
         padding: 10px;

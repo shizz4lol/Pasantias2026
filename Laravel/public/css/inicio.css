@@ -40,7 +40,18 @@ header {
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
-
+#header-izq{
+    display: flex;
+    max-width: 400px;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-izq #user-header p{
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 30px;
+}
 #titulo-header h1 {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
@@ -110,12 +121,17 @@ tbody td data-cell, tbody td button, tbody td .btn {
     display: inline-block;
 }
 
+.imagen{
+    height:180px; 
+    width:120px;
+}
 tbody td .btn-primary {
     background-color: #ad780f !important;
     border-color: #ad780f !important;
     font-weight: bold;
     padding: 0;
     margin-right: 10px;
+    padding: 6px 12px;
 }
 
 tbody td .btn-primary:hover {
@@ -141,7 +157,28 @@ tbody td .btn-outline-info:hover {
     background-color: #7a5407 !important;
     border-color: #7a5407 !important;
 }
-
+#alerta .modal-content{
+    background-color: #1e1e1e;
+    color:white;
+}
+.modal-content .modal-footer, .modal-content .modal-header{
+    border-color: gray;
+}
+#alerta .modal-footer .btn-primary{
+    background-color: #ad780f !important;
+    border-color: #ad780f !important;
+    font-weight: bold;
+    padding: 0;
+    margin-right: 10px;
+    padding: 6px 12px;
+    
+}
+#alerta .modal-footer .btn-primary:hover{
+    background-color: #7a5407 !important;
+    border-color: #7a5407 !important;
+    font-weight: bold;
+    
+}
 #agregar {
     width: 90%;
     max-width: 1000px;

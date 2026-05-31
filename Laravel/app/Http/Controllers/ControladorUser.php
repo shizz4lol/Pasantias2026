@@ -11,5 +11,7 @@ class ControladorUser extends Controller
         $user->name = $request->input('nombre');
         $user->email = $request->input('email');
         $user->password = $request->input('contraseña');
+        $user->save();
+        return redirect('login');
     }
 }

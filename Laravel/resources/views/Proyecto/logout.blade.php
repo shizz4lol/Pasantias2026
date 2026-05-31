@@ -19,8 +19,10 @@
 
         <div id="logout">
             <h2>¿Seguro de que deseas cerrar la sesión?</h2><br/>
-
-            <button type="button" class="btn btn-outline-info">Cerrar sesión</button><br/>
+            <form action="{{ route('logout') }}" method="POST" >
+             @csrf
+                <button type="submit" class="btn btn-outline-info"> Cerrar sesión</button><br>
+            </form><br>
             <button type="button" class="btn btn-outline-info"><a href="{{ route('inicio') }}">Cancelar</a></button>
         </div>
 
